@@ -3,6 +3,7 @@
     <script>
       let HOST = location.origin.replace(/^http/, 'ws')
       let ws = new WebSocket(HOST);
+      console.log(HOST);
       let el;
 
       ws.onmessage = (event) => {
